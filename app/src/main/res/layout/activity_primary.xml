@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_primary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basic1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:weightSum="1"
+    tools:context="com.example.pritom.healthwatcher.Primary">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/heartrate" />
+
+    <ImageButton
+        android:id="@+id/HR"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/hr1" />
+
+    <ImageButton
+        android:id="@+id/RR"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/rr1" />
+
+    <ImageButton
+        android:id="@+id/BP"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/bp1" />
+
+    <ImageButton
+        android:id="@+id/O2"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/or1" />
+
+    <ImageButton
+        android:id="@+id/VS"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        app:srcCompat="@mipmap/avs"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/news"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        android:onClick="open"
+        android:scaleType="fitEnd"
+        android:text="Health News"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/eye"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:background="@color/aqua"
+        android:onClick="eye"
+        android:scaleType="fitEnd"
+        android:text="Eye Test"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/About"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@mipmap/ab" />
+
+
+</LinearLayout>
